@@ -1,0 +1,392 @@
+@import "vars";
+@import "fonts";
+@import "global";
+@import "header";
+@import "footer";
+
+$color_yellow: #ffc222;
+$roboto : 'Roboto', sans-serif;
+$color_black: #212020;
+$color_white: #fff;
+$color_layout: #303030;
+$serif: 'PT Serif', serif;
+
+.header {
+	display: flex;	
+}
+
+.header__menu-additional {
+	display: inline-block;
+	width: 100%;
+	background-color: $color_layout;
+	flex-direction: row;
+	a {
+		color: $color_white;
+		text-decoration: none;
+		font-family: $roboto;
+		font-size: 14px;
+		line-height: 24px;
+		margin-top: 14px;
+		margin-bottom: 14px;
+		font-weight: lighter;
+		margin-right: 15px;
+	}
+	.header_cons {
+		color: $color_white;
+		font-size: 16px;
+		line-height: 6px;
+		background: transparent;
+		border:none;
+		font-weight: lighter;
+		margin-top: 24px;
+		margin-bottom: 16px;
+		&:hover {
+			color: #000;
+			background-color: $color_yellow;
+			padding-top: 20px;
+			padding-bottom: 16px;
+			padding-left: 45px;
+			padding-right: 45px;
+			border:none;
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 0;
+		}
+	}
+	
+}
+
+
+// .header__menu-main {
+// 	display: flex;	
+// 	flex-direction: row;
+// 	justify-content: space-between;
+// }
+
+.menu-main{
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-main ul{
+	display: flex;
+}
+
+.menu ul{
+	justify-content: flex-end;
+}
+
+.logo {
+	margin-top: 45px;
+  	margin-bottom: 35px;
+}
+
+.menu-main ul a {
+  text-decoration: none;
+  font-weight: lighter;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: $roboto;
+  margin-left: 45px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  &:hover {
+		border: solid 1px $color_yellow; 
+		padding: 5px 20px;
+		margin-top: 35px;
+	}
+}
+
+// title section
+
+.main-slider {
+	position: relative;
+	
+}
+
+.slider {
+	
+}
+
+.slider1 {
+	background-image: url(../img/bg1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+}
+
+.slider2 {
+	background-image: url(../img/bg3.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+}
+
+.slider-title {
+	font-family: $roboto;
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 36px;
+	color: #fff;
+	text-align: center;
+	top: 127px;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+
+.slider-desc {
+	font-family: $serif;
+	font-weight: lighter;
+	font-size: 18px;
+	color: #d3d2d2;
+	position: absolute;
+	color: #d3d2d2;
+	line-height: 24px;
+	text-align: center;
+	top: 185px;
+	left: 388px;
+	right: 0;
+	z-index: 6;
+	max-width: 667px;
+}
+
+.request{
+	font-family: $roboto;
+	font-weight: medium;
+	background-color: transparent;
+	border: solid 1px $color_yellow; 
+	font-size: 14px;
+	line-height: 24px;
+	padding: 10px 25px;
+	position: absolute;
+	top: 270px;
+	left: 600px;
+	color: #fff;
+	text-align: center;
+	&:hover {
+		background-color: $color_yellow;
+	}
+}
+
+.slick-prev {
+	width: 40px;
+	height: 40px;
+	background-color: transparent; 
+	border: solid 1px #fff; 
+	position: absolute;
+	top: 250px;
+	left: 300px;
+	z-index: 5;
+	&:hover {
+		background-color: $color_yellow;
+	}
+}
+
+.slick-next {
+	width: 40px;
+	height: 40px;
+	background-color: transparent; 
+	border: solid 1px #fff; 
+	position: absolute;
+	top: 250px;
+	right: 300px;
+	z-index: 5;
+	&:hover {
+		background-color: $color_yellow;
+	}
+}
+
+// services
+
+.services-main {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.our_services {
+	margin-left: -350px !important;
+	max-width: 380px;
+	padding-top: 0;
+	margin-top: -10px;
+	
+}
+
+.line_yellow {
+	border: solid 2px $color_yellow;
+	width: 105px;
+	height: 2px;
+	margin-top: -4px;
+}
+
+.our_services-title,
+.consultation-title {
+	font-size: 24px;
+	line-height: 24px;
+	color: $color_black;
+	font-weight: bold;
+	font-family: $roboto;
+}
+
+.our_services-desc,
+.consultation-desc{
+	font-family: $serif;
+	line-height: 18px;
+	font-size: 14px;
+	color: #5e5e5e;
+	margin-top: 18px;
+}
+
+.all-services-link {
+	font-family: $serif;
+	line-height: 18px;
+	font-size: 14px;
+	color: #5e5e5e;
+	border: solid 2px #e6e6e6; 
+	padding: 10px 45px;
+	margin-top: -7px;
+	
+}
+.services {
+	margin-bottom: 35px;
+}
+
+.services-sec {
+	
+	margin-top: 60px;
+	position: relative;
+}
+
+.services-offers {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.services-sec:before {
+	content: "";
+	background-color: #f9f9f9;
+	box-shadow: 0 13px 27px rgba(0, 0, 0, 0.15);
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	height: 100%;
+	top: 0px;
+	z-index: -1;
+}
+
+.services-offers-title {
+	font-weight: medium;
+	font-family: $roboto;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 110px;
+	color: #000;
+	z-index: 1;
+}
+
+.services-offers-desc {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 300;
+	font-family: $serif;
+	color: #5e5e5e;
+	margin-top: 30px;
+	text-align: center;
+	z-index: 1;
+}
+
+.services-offers-links {
+	font-weight: medium;
+	font-family: $roboto;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+	margin-top: 80px;
+	text-decoration: underline;
+	z-index: 1;
+}
+
+.offer-button {
+	z-index: 1;
+	font-family: $roboto;
+	font-weight: bold;
+	line-height: 24px;
+	font-size: 14px;
+	color: #5e5e5e;
+	border: solid 2px $color_yellow;
+	padding: 10px 35px;
+	background-color: transparent;
+	margin-left: 85px;
+	outline: none;
+	margin-bottom: 45px;
+		&:hover {
+			background-color: $color_yellow;
+			color: #FFF;
+		}
+}
+
+.about {
+	background-image: url(../img/know.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 350px;
+	position: relative;
+}
+
+.about-title {
+	font-size: 24px;
+	line-height: 24px;
+	color: #fff;
+	font-family: $roboto;
+	font-weight: medium;
+	display: block;
+	margin-top: 35px;
+}
+
+.about-desc {
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	font-family: $serif;
+}
+
+.about-button {
+	margin-left: 14px;
+	margin-top: 35px;
+	padding: 10px 25px;
+	color: #fff;
+	border: solid 2px $color_yellow;
+	background-color: transparent;
+	font-family: $roboto;
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: transparent;
+	outline: none;
+	margin-bottom: 45px;
+	&:hover {
+			background-color: $color_yellow;
+		}
+}
+
+.consultation {
+	
+}
+
+.consultation-main {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+}
