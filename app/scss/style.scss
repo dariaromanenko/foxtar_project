@@ -212,8 +212,9 @@ $serif: 'PT Serif', serif;
 	justify-content: space-between;
 }
 
-.our_services {
-	margin-left: -350px !important;
+.our_services,
+.company-news  {
+	margin-left: -380px !important;
 	max-width: 380px;
 	padding-top: 0;
 	margin-top: -10px;
@@ -228,7 +229,8 @@ $serif: 'PT Serif', serif;
 }
 
 .our_services-title,
-.consultation-title {
+.consultation-title,
+.company-news-title {
 	font-size: 24px;
 	line-height: 24px;
 	color: $color_black;
@@ -237,15 +239,18 @@ $serif: 'PT Serif', serif;
 }
 
 .our_services-desc,
-.consultation-desc{
+.consultation-desc,
+.company-news-desc{
 	font-family: $serif;
 	line-height: 18px;
 	font-size: 14px;
 	color: #5e5e5e;
 	margin-top: 18px;
+	padding-left: 0px;
 }
 
-.all-services-link {
+.all-services-link,
+.all-news-link {
 	font-family: $serif;
 	line-height: 18px;
 	font-size: 14px;
@@ -381,7 +386,13 @@ $serif: 'PT Serif', serif;
 }
 
 .consultation {
-	
+	margin-top: 50px;
+	// margin-bottom: 25px;
+}
+
+.our_consultation {
+	margin-left: 40px;
+	margin-top: -13px;
 }
 
 .consultation-main {
@@ -389,4 +400,198 @@ $serif: 'PT Serif', serif;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: flex-start;
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	// margin-bottom: 45px;
+	p {
+		margin-top: 15px;
+		margin-bottom: 7px;
+	}
+	.theme {
+		width:265px; 
+		height:40px;
+		background-color: transparent;
+		border-radius: 0;
+	}
+}
+
+.get-consult {
+	font-family: $roboto;
+	font-weight: bold;
+	line-height: 24px;
+	font-size: 14px;
+	color: #5e5e5e;
+	border: solid 2px $color_yellow;
+	padding: 10px 35px;
+	background-color: transparent;
+	display: inline block;
+	margin-left: auto;
+	outline: none;
+	margin-top: 40px;
+	justify-content: flex-end;
+		&:hover {
+			background-color: $color_yellow;
+			color: #FFF;
+		}
+}
+
+.girl-img {
+	justify-content: flex-end;
+	margin-left: 50px;
+    margin-top: -50px;
+}
+
+.check {
+	background-image: url(../img/check.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 300px;
+	position: relative;
+	margin-top: -10px;
+}
+
+.check-title {
+	margin-top: 125px;
+	font-family: $roboto;
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+}
+
+.check-descr {
+	margin-top: 25px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	font-family: $serif;
+	text-align: center;
+}
+
+.news {
+	background-color: #f9f9f9;
+	margin-bottom: 350px;
+	
+}
+
+.news-main {
+	padding-top: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	// 
+}
+
+
+.news-big-block {
+	margin-top: 25px;
+	background-color: #fff;
+	padding-left: 70px;
+	padding-right: 35px;
+	height: 345px;
+}
+
+.news-big-square {
+	width: 65px;
+	height: 30px;
+	background-color: $color_yellow;
+}
+
+.news-big-title {
+	padding-top: 35px;
+	font-family: $roboto;
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 18px;
+	color: #000;
+}
+
+.news-big-descr {
+	margin-top: 20px;
+	color: #5e5e5e;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+	font-family: $serif;
+}
+
+.news-big-author {
+	margin-top: 25px;
+	color: #000;
+	line-height: 18px;
+	font-size: 14px;
+	font-family: $roboto;
+	padding-bottom: 50px;
+}
+
+.news-small-block {
+	margin-top: 25px;
+	position: relative;
+}
+
+.news-small-square {
+	position: absolute;
+	width: 47px;
+	height: 53px;
+	background-color: $color_yellow;
+	left: 10px;
+	.date {
+		color: #fff;
+		font-family: $serif;
+		text-align: center;
+		padding-top: -30px;
+		margin-top: -30px;
+	}
+}
+
+.news-small-title {
+	margin-top: 15px;
+	font-family: $roboto;
+	font-weight: 500;
+	line-height: 18px;
+	font-size: 16px;
+	color: #000;
+}
+
+.news-small-descr {
+	margin-top: 15px;
+	color: #5e5e5e;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 300;
+	font-family: $serif;
+}
+
+.slick-prev-news {
+	width: 40px;
+	height: 40px;
+	background-color: transparent; 
+	border: solid 1px $color_yellow;; 
+	position: absolute;
+	top: 400px;
+	left: 520px;
+	z-index: 5;
+	&:hover {
+		background-color: $color_yellow;
+	}
+}
+
+.slick-next-news {
+	width: 40px;
+	height: 40px;
+	background-color: transparent; 
+	border: solid 1px $color_yellow;; 
+	position: absolute;
+	top: 400px;
+	left: 460px;
+	z-index: 5;
+	&:hover {
+		background-color: $color_yellow;
+	}
 }
