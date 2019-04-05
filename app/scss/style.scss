@@ -38,30 +38,17 @@ $serif: 'PT Serif', serif;
 		background: transparent;
 		border:none;
 		font-weight: lighter;
-		margin-top: 24px;
-		margin-bottom: 16px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+		padding: 20px 45px 16px;
+		background-color: transparent;
 		&:hover {
 			color: #000;
 			background-color: $color_yellow;
-			padding-top: 20px;
-			padding-bottom: 16px;
-			padding-left: 45px;
-			padding-right: 45px;
-			border:none;
-			text-align: center;
-			margin-top: 10px;
-			margin-bottom: 0;
 		}
 	}
 	
 }
-
-
-// .header__menu-main {
-// 	display: flex;	
-// 	flex-direction: row;
-// 	justify-content: space-between;
-// }
 
 .menu-main{
 	display: flex;
@@ -83,18 +70,16 @@ $serif: 'PT Serif', serif;
 
 .menu-main ul a {
   text-decoration: none;
-  font-weight: lighter;
+  font-weight: 300;
   color: #000;
   font-size: 16px;
   text-decoration: none;
   font-family: $roboto;
-  margin-left: 45px;
-  margin-top: 45px;
-  margin-bottom: 35px;
+  margin: 45px 0 35px 45px;
+  padding: 5px 20px;
+  border: solid 1px transparent; 
   &:hover {
 		border: solid 1px $color_yellow; 
-		padding: 5px 20px;
-		margin-top: 35px;
 	}
 }
 
@@ -102,7 +87,6 @@ $serif: 'PT Serif', serif;
 
 .main-slider {
 	position: relative;
-	
 }
 
 .slider {
@@ -476,7 +460,7 @@ $serif: 'PT Serif', serif;
 
 .news {
 	background-color: #f9f9f9;
-	margin-bottom: 350px;
+	padding-bottom: 150px;
 	
 }
 
@@ -586,7 +570,7 @@ $serif: 'PT Serif', serif;
 	width: 40px;
 	height: 40px;
 	background-color: transparent; 
-	border: solid 1px $color_yellow;; 
+	border: solid 1px $color_yellow;
 	position: absolute;
 	top: 400px;
 	left: 460px;
@@ -594,4 +578,74 @@ $serif: 'PT Serif', serif;
 	&:hover {
 		background-color: $color_yellow;
 	}
+}
+
+.contacts {
+	background-color: #595959;
+	padding-bottom: 40px;
+}
+
+.contacts-title {
+	margin-top: 25px;
+	font-family: $roboto;
+	font-weight: 500;
+	line-height: 36px;
+	font-size: 16px;
+	color: #FFF;
+}
+
+.contacts-descr {
+	margin-top: 15px;
+	font-family: $roboto;
+	font-weight: 300;
+	line-height: 18px;
+	font-size: 14px;
+	color: #d3d2d2;
+}
+
+.free-consult {
+		color: $color_white;
+		font-size: 16px;
+		line-height: 36px;
+		background: transparent;
+		border: solid 1px $color_yellow;
+		font-weight: lighter;
+		margin-top: 45px;
+		padding: 5px 55px;
+		&:hover {
+			
+			background-color: $color_yellow;
+			
+		}
+}
+
+.list-contacts {
+	// margin-top: 25px;
+	li {
+		margin-top: 20px;
+	}
+	a {
+		
+		color: $color_white;
+		font-size: 16px;
+		line-height: 24px;
+		font-family: $roboto;
+	}
+	
+}
+
+.footer {
+	background-color: #303030;
+	
+}
+
+.footer-sign {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-family: $roboto;
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 12px;
+	margin: 0;
 }
